@@ -1,0 +1,37 @@
+name: release test
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  checkout-repo:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build project
+      run: npm run build
+
+    - name: Deploy to Afrihost via FTP
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ${{ secrets.AFRIHOST_FTP_SERVER }}
+        username: ${{ secrets.AFRIHOST_FTP_USERNAME }}
+        password: ${{ secrets.AFRIHOST_FTP_PASSWORD }}
+        local-dir: ./dist
+        server-dir: /public_html
+
+    - name: Notify deployment to Afrihost via FTP success
+      run: echo "Deployment to Afrihost successful!"

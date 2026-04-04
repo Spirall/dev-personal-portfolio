@@ -1,5 +1,5 @@
-import { Button } from "@/components/button";
-import { AnimatedBorderButton } from "@/components/animated-border-button";
+import { Button } from "../components/Button";
+import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 import {
   ArrowRight,
   Github,

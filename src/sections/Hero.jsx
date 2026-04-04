@@ -1,5 +1,5 @@
 import { Button } from "@/components/button";
-import { AnimatedBorderButton } from "@/components/animatedborderbutton";
+import { AnimatedBorderButton } from "@/components/animated-border-button";
 import {
   ArrowRight,
   Github,
@@ -15,7 +15,7 @@ const skills = [
   "Node.JS",
   "GraphQL",
   "PostgreSQL",
-  "MangoDB",
+  "MongoDB",
   "Redis",
   "Docker",
   "AWS",

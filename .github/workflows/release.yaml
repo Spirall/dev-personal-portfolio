@@ -30,7 +30,7 @@ jobs:
         server: ${{ secrets.AFRIHOST_FTP_SERVER }}
         username: ${{ secrets.AFRIHOST_FTP_USERNAME }}
         password: ${{ secrets.AFRIHOST_FTP_PASSWORD }}
-        local-dir: ./dist
+        local-dir: ./dist/
         server-dir: /public_html
 
     - name: Notify deployment to Afrihost via FTP success

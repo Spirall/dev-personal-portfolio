@@ -18,5 +18,3 @@ If you are developing a production application, we recommend using TypeScript wi
 #Testing GithubActions Pipeline
 
 Pipeline should be triggered by a commit to main.
-
-Test Pipelines, And see if the site is accessible via internet

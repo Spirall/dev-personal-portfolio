@@ -6,7 +6,7 @@ const projects = [
     description:
       "A comprehensive web application used by the record label to manage bookings, broadcast a gig guide,\
       display profiles of the record labels artists, and display some of the labels latest mixtapes",
-    image: "/projects/project1.png",
+    image: "/projects/projectA.png",
     tags: [
       "Angular",
       "Typescript",
@@ -24,7 +24,7 @@ const projects = [
     title: "Software Development Startup Website",
     description:
       "A simple web application used to display information about the the startup company, and the services they provide including testimonials",
-    image: "/projects/project2.png",
+    image: "/projects/projectB.png",
     tags: ["React", "Typescript", "CSS", "Tailwind", "HTML"],
     link: "https://bytebuilders.africa/",
     github: "https://github.com/ByteBuildersRepo/volantis",
@@ -33,7 +33,7 @@ const projects = [
     title: "Resume/Portfolio Website",
     description:
       "A Website used as a resume, displays the developers professional profile and past and current projects",
-    image: "/projects/project3.png",
+    image: "/projects/projectC.png",
     tags: ["React", "JavaScript", "CSS", "FastAPI"],
     link: "https://dikgalemediaservices.co.za/",
     github: "https://github.com/Spirall/dev-personal-portfolio",
@@ -42,7 +42,7 @@ const projects = [
     title: "Project Management Tool",
     description:
       "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
+    image: "/projects/projectD.png",
     tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
     link: "#",
     github: "#",

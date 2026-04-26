@@ -2,31 +2,41 @@ import { ArrowUpRight, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "Record Label Website",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
+      "A comprehensive web application used by the record label to manage bookings, broadcast a gig guide,\
+      display profiles of the record labels artists, and display some of the labels latest mixtapes",
     image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
+    tags: [
+      "Angular",
+      "Typescript",
+      "NodeJS",
+      "SCSS",
+      "HTML",
+      "Docker",
+      "C#",
+      "SQL",
+    ],
     link: "#",
-    github: "#",
+    github: "https://github.com/Spirall/garagefm-site",
   },
   {
-    title: "E-Commerce Platform",
+    title: "Software Development Startup Website",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
+      "A simple web application used to display information about the the startup company, and the services they provide including testimonials",
     image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
-    github: "#",
+    tags: ["React", "Typescript", "CSS", "Tailwind", "HTML"],
+    link: "https://bytebuilders.africa/",
+    github: "https://github.com/ByteBuildersRepo/volantis",
   },
   {
-    title: "AI Writing Assistant",
+    title: "Resume/Portfolio Website",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
+      "A Website used as a resume, displays the developers professional profile and past and current projects",
     image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
-    link: "#",
-    github: "#",
+    tags: ["React", "JavaScript", "CSS", "FastAPI"],
+    link: "https://dikgalemediaservices.co.za/",
+    github: "https://github.com/Spirall/dev-personal-portfolio",
   },
   {
     title: "Project Management Tool",

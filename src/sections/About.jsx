@@ -49,22 +49,31 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                Hardworking and energetic Full Stack Software Engineer with a
+                National Diploma and Advanced Diploma in IT, currently pursuing
+                a BSc Honours in Computing (completion expected in 2025). I hold
+                multiple certifications, including Cisco Networking Academy’s
+                A+: IT Essentials, Discovery CCNA 1 & 2, and Microsoft Azure
+                Fundamentals. I am fluent in English, Afrikaans, Sotho, and
+                Zulu.
               </p>
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                With over a decade of professional development experience, I am
+                deeply passionate about building impactful software solutions. I
+                consider myself a reliable, strong-willed, and dedicated team
+                player with a proven work ethic. My goal is to establish a
+                strong reputation as both a Software Engineer and Tech
+                Evangelist within the ICT industry.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                I thrive in collaborative environments that value mentorship,
+                continuous learning, and knowledge sharing, while also
+                appreciating the autonomy to self-manage and drive initiatives.
+                My ideal team combines experienced senior developers with
+                intermediate and junior colleagues, fostering a culture where
+                everyone learns and grows together.
+                <br /> <br /> Motto: "Do what you can, where you are... with
+                what you have!"
               </p>
             </div>
             <div className="glass rounded-2xl pp-6 glow-border animate-fade-in animation-delay-200">

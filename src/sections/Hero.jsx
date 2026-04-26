@@ -79,10 +79,13 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Thabo Dikgale - a Fullstack Sotware Engineer in Angular,
-                React, Next.js, Typescript, C# and .Net Core all round Tech
-                Evanglist. I build scalable, performant web applications that
-                users love.
+                Hi, I'm Thabo Dikgale - A Fullstack Sotware Engineer I build
+                scalable, high‑performance web applications using Angular,
+                React, Next.js, TypeScript, Javascript, SQL, C#, and .NET Core.
+                With a decade of professional experience, Team player, a strong
+                work ethic, I combine strong engineering fundamentals, a
+                user‑centred approach, and a passion for for tech and builing
+                systems that are solutions to real world problems.
               </p>
             </div>
             {/* CTA's */}
@@ -141,7 +144,7 @@ export const Hero = () => {
                 </div>
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">9+</div>
+                  <div className="text-2xl font-bold text-primary">10</div>
                   <div className="text-sx text-shadow-muted-foreground">
                     Years Exp.
                   </div>

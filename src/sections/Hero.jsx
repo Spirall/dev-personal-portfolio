@@ -1,3 +1,4 @@
+import { Download } from "lucide-react";
 import { Button } from "../components/Button";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 import {
@@ -93,7 +94,11 @@ export const Hero = () => {
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton />
+              <AnimatedBorderButton>
+                {" "}
+                <Download className="w-5 h-5" />
+                Download CV
+              </AnimatedBorderButton>
             </div>
 
             {/* Social Links */}

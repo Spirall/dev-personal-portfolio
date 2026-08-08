@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ChevronLeft, Quote, ChevronRight } from "lucide-react";
 
 const testimonials = [
@@ -40,6 +41,18 @@ const testimonials = [
 ];
 
 export const Testimonials = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const goToPrevious = () => {
+    setActiveIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+  };
+
+  const goToNext = () => {
+    setActiveIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+  };
+
+  const activeTestimonial = testimonials[activeIndex];
+
   return (
     <section id="testimonials" className="py-32 relative overflow-hidden">
       <div
@@ -94,59 +107,64 @@ export const Testimonials = () => {
                 />
               </div>
               <blockquote
-                className="text-xl 
+                className="text-xl
                 md:text-2xl font-medium mb-8 pt-4"
               >
-                "{testimonials[0].quote}"
+                "{activeTestimonial.quote}"
               </blockquote>
               <div
-                className="flex items-center 
+                className="flex items-center
                 gap-4"
               >
                 <img
-                  src={testimonials[0].avatar}
-                  alt={testimonials[0].author}
-                  className="w-14 h-14 rounded-full 
+                  src={activeTestimonial.avatar}
+                  alt={activeTestimonial.author}
+                  className="w-14 h-14 rounded-full
                   object-cover ring-2 ring-primary/20 "
                 />
                 <div>
-                  <div className="font-semibold">{testimonials[0].author}</div>
+                  <div className="font-semibold">{activeTestimonial.author}</div>
                   <div className="text-sm text-muted-foreground">
-                    {testimonials[0].role}
+                    {activeTestimonial.role}
                   </div>
                 </div>
               </div>
             </div>
             {/* Testimonial Navigation */}
             <div
-              className="flex items-center 
+              className="flex items-center
             justify-center gap-4 mt-8"
             >
               <button
-                className="p-3 rounded-full 
-                glass hover:bg-primary/10 
+                onClick={goToPrevious}
+                aria-label="Previous testimonial"
+                className="p-3 rounded-full
+                glass hover:bg-primary/10
               hover:text-primary transition-all"
               >
                 <ChevronLeft />
               </button>
 
-              {/*TODO: Fix this div it is not rendering in the browser*/}
-              {/* #Technical Debt */}
               <div className="flex gap-2">
-                {testimonials.map((_, idx) => {
+                {testimonials.map((_, idx) => (
                   <button
-                    className={`w-2 h-2 rounded-full transition-all ${
-                      idx === 0
+                    key={idx}
+                    onClick={() => setActiveIndex(idx)}
+                    aria-label={`Go to testimonial ${idx + 1}`}
+                    className={`h-2 rounded-full transition-all ${
+                      idx === activeIndex
                         ? "w-8 bg-primary"
-                        : "bg-muted-foreground/30  hover:bg-muted-foreground/50"
+                        : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
                     }`}
-                  />;
-                })}
+                  />
+                ))}
               </div>
 
               <button
-                className="p-3 rounded-full 
-                glass hover:bg-primary/10 
+                onClick={goToNext}
+                aria-label="Next testimonial"
+                className="p-3 rounded-full
+                glass hover:bg-primary/10
               hover:text-primary transition-all"
               >
                 <ChevronRight />
